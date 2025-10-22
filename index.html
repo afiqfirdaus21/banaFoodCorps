@@ -8,19 +8,38 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
+<script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navbar = document.getElementById("navbar");
+
+    menuToggle.addEventListener("click", () => {
+        navbar.classList.toggle("show");
+    });
+</script>
+
+
 <body>
     <header>
-        <h1>SELAMAT DATANG DI WEBSITE K3 PERUSAHAAN</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="landasan-hukum.html">Landasan Hukum</a></li>
-                <li><a href="lingkungan-kerja.html">Lingkungan Kerja</a></li>
-                <li><a href="keselamatan-kerja.html">Keselamatan Kerja</a></li>
-                <li><a href="apd.html">APD</a></li>
-                <li><a href="p3k.html">P3K</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Logo_Kemenkeu.svg" alt="Logo" />
+                <h1>Bana Food Corps</h1>
+            </div>
+
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Beranda</a></li>
+                    <li><a href="landasan.html">Landasan Hukum</a></li>
+                    <li><a href="lingkungan.html">Lingkungan Kerja</a></li>
+                    <li><a href="keselamatan.html">Keselamatan Kerja</a></li>
+                    <li><a href="apd.html">APD</a></li>
+                    <li><a href="p3k.html">P3K</a></li>
+                </ul>
+            </nav>
+
+            <!-- Tombol menu responsif -->
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        </div>
     </header>
 
     <section class="intro">
