@@ -16,7 +16,7 @@ body {
 
 /* === HEADER BARU === */
 header {
-    background-color: #230a7a;
+    background-color: #051538;
     color: #ffffffc7;
     width: 100%;
     position: fixed;
@@ -150,7 +150,7 @@ section {
 
 /* === Footer === */
 footer {
-    background-color: #0d9488;
+    background-color: #051538;
     color: #fff;
     padding: 40px 10% 20px;
     margin-top: 40px;
