@@ -299,7 +299,20 @@ footer {
     color: #fff;
     padding: 40px 10% 20px;
     margin-top: 40px;
-    text-align: left;
+}
+
+/* Make footer typography consistent and tidy */
+footer, footer p, footer a, footer li {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #d6dbe0;
+}
+
+footer h3 {
+    color: #ffd166;
+    margin-bottom: 12px;
+    font-size: 20px;
+    letter-spacing: 0.6px;
 }
 
 footer h3 {
@@ -345,13 +358,29 @@ footer iframe {
 }
 
 .footer-right {
-    flex: 0 0 360px; /* map column fixed width on desktop */
+    flex: 0 0 320px; /* map column fixed width on desktop */
+    display: flex;
+    align-items: center; /* center the map vertically */
+    justify-content: center;
 }
 
 .footer-right iframe {
     width: 100%;
-    height: 240px;
-    margin-top: 0;
+    height: 200px;
+    margin: 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.45);
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* make links/list look tidy */
+.footer-left p, .footer-left a, .footer-left li {
+    color: #d6dbe0;
+    font-size: 14px;
+}
+
+.footer-left p strong {
+    color: #fff;
 }
 
 /* === Responsif === */
