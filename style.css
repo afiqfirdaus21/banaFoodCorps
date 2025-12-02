@@ -383,8 +383,14 @@ footer iframe {
 
 /* Footer bottom (copyright) center alignment */
 .footer-bottom {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     padding-top: 12px;
+}
+.footer-bottom p {
+    margin: 0;
 }
 
 /* PDF Viewer Styling */
