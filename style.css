@@ -389,9 +389,6 @@ footer iframe {
     width: 100%;
     padding-top: 12px;
 }
-.footer-bottom p {
-    margin: 0;
-}
 
 /* PDF Viewer Styling */
 .pdf-viewer {
