@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beranda - Bana Food Corps</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-v2.css" />
     <meta name="description" content="Bana Food Corps — Produsen makanan ringan halal berbasis di Lawang, Malang. Kebijakan K3, APD, dan P3K.">
     <link rel="icon" href="assets/images/favicon.ico">
     <!-- Open Graph -->
@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Lewati ke konten</a>
     <!-- Header -->
     <header>
         <div class="header-container">
@@ -49,7 +50,7 @@
     </section>
 
     <!-- Tentang Kami -->
-    <main>
+    <main id="main">
     <section id="tentang" class="about">
         <h2>Tentang Kami</h2>
         <p>
@@ -175,6 +176,14 @@
                 navbar.classList.toggle('show');
             });
         }
+        // set CSS var for header height to avoid content overlay
+        (function setHeaderHeight(){
+            const header = document.querySelector('header');
+            if(!header) return;
+            const apply = ()=> document.documentElement.style.setProperty('--header-height', header.offsetHeight + 'px');
+            apply();
+            window.addEventListener('resize', apply);
+        })();
     </script>
 </body>
 
