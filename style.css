@@ -294,6 +294,12 @@ section {
 
 
 /* === Footer === */
+footer {
+    background-color: #051538;
+    color: #fff;
+    padding: 40px 10% 20px;
+    margin-top: 40px;
+}
 
 /* Make footer typography consistent and tidy */
 footer, footer p, footer a, footer li {
