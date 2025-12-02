@@ -379,15 +379,12 @@ footer iframe {
         flex: 1 1 0;
         width: 100%;
     }
-<<<<<<< HEAD
 }
 
 /* Footer bottom (copyright) center alignment */
 .footer-bottom {
     text-align: center;
     padding-top: 12px;
-=======
->>>>>>> f59ac9d169176c5b1d1570c5ec81af60deb91cfc
 }
 
 /* PDF Viewer Styling */
