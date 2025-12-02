@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beranda - Bana Food Corps</title>
     <link rel="stylesheet" href="style.css" />
-    <meta name="description" content="Bana Food Corps — Produsen makanan ringan halal berbasis di Lawang, Malang. Kebijakan K3, APD, dan P3K.">
+    <meta name="description"
+        content="Bana Food Corps — Produsen makanan ringan halal berbasis di Lawang, Malang. Kebijakan K3, APD, dan P3K.">
     <link rel="icon" href="assets/images/favicon.ico">
     <!-- Open Graph -->
     <meta property="og:title" content="Bana Food Corps">
-    <meta property="og:description" content="Produsen makanan ringan halal — keripik molreng, basreng, makaroni, dan seblak.">
+    <meta property="og:description"
+        content="Produsen makanan ringan halal — keripik molreng, basreng, makaroni, dan seblak.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/images/banner-bg.jpg">
 </head>
@@ -20,7 +22,7 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="assets/images/banana.jpg" alt="Logo Bana Food Corps" width="45" height="45" loading="lazy" />
+                <img src="assets/images/banana.jpg" alt="Logo" />
                 <h1>Bana Food Corps</h1>
             </div>
 
@@ -35,7 +37,8 @@
                 </ul>
             </nav>
 
-            <button id="menu-toggle" class="menu-toggle" aria-controls="navbar" aria-expanded="false" aria-label="Buka menu navigasi">☰</button>
+            <!-- Tombol menu responsif -->
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         </div>
     </header>
 
@@ -50,88 +53,94 @@
 
     <!-- Tentang Kami -->
     <main>
-    <section id="tentang" class="about">
-        <h2>Tentang Kami</h2>
-        <p>
-            <strong>Bang Bana</strong> adalah perusahaan yang bergerak di bidang makanan ringan halal, khususnya
-            <em>keripik molreng, basreng pedas, makaroni</em>, dan <em>seblak</em> yang sedang berkembang pesat.
-            Nama lengkap perusahaan kami adalah <strong>CV. TKT Bana Food</strong> yang berlokasi di Lawang, Kabupaten
-            Malang.
-            Saat ini, kami telah memiliki cakupan distribusi di lebih dari <strong>16 kota di Pulau Jawa</strong>.
-        </p>
-        <div class="produk-gallery">
-            <div class="produk-card">
-                <img src="assets/images/molreng.jpg" alt="Keripik Molreng" width="250" height="180" loading="lazy">
-                <h4>Keripik Molreng</h4>
+        <section id="tentang" class="about">
+            <h2>Tentang Kami</h2>
+            <p>
+                <strong>Bang Bana</strong> adalah perusahaan yang bergerak di bidang makanan ringan halal, khususnya
+                <em>keripik molreng, basreng pedas, makaroni</em>, dan <em>seblak</em> yang sedang berkembang pesat.
+                Nama lengkap perusahaan kami adalah <strong>CV. TKT Bana Food</strong> yang berlokasi di Lawang,
+                Kabupaten
+                Malang.
+                Saat ini, kami telah memiliki cakupan distribusi di lebih dari <strong>16 kota di Pulau Jawa</strong>.
+            </p>
+            <div class="produk-gallery">
+                <div class="produk-card">
+                    <img src="assets/images/molreng.jpg" alt="Keripik Molreng" width="250" height="180" loading="lazy">
+                    <h4>Keripik Molreng</h4>
+                </div>
+                <div class="produk-card">
+                    <img src="assets/images/basreng.jpg" alt="Basreng Pedas" width="250" height="180" loading="lazy">
+                    <h4>Basreng Pedas</h4>
+                </div>
+                <div class="produk-card">
+                    <img src="assets/images/makaroni.jpg" alt="Makaroni Pedas" width="250" height="180" loading="lazy">
+                    <h4>Makaroni Pedas</h4>
+                </div>
             </div>
-            <div class="produk-card">
-                <img src="assets/images/basreng.jpg" alt="Basreng Pedas" width="250" height="180" loading="lazy">
-                <h4>Basreng Pedas</h4>
+        </section>
+
+
+        <!-- Lingkungan Kerja -->
+        <!-- Landasan Hukum -->
+        <section id="landasan" class="highlight-section">
+            <h2>Landasan Hukum K3</h2>
+            <p>
+                Penerapan Keselamatan dan Kesehatan Kerja (K3) di Bana Food Corps berlandaskan pada beberapa peraturan
+                resmi
+                pemerintah yang menjadi dasar hukum pelaksanaan kegiatan industri makanan. Dokumen berikut memuat
+                penjelasan
+                rinci mengenai undang-undang dan peraturan yang berlaku:
+            </p>
+
+            <ul>
+                <li>✅ <strong>UU No. 1 Tahun 1970</strong> tentang Keselamatan Kerja</li>
+                <li>✅ <strong>PP No. 50 Tahun 2012</strong> tentang Sistem Manajemen K3 (SMK3)</li>
+                <li>✅ <strong>Permenaker No. 5 Tahun 2018</strong> tentang K3 Lingkungan Kerja</li>
+                <li>✅ <strong>UU No. 13 Tahun 2003</strong> tentang Ketenagakerjaan</li>
+            </ul>
+
+            <div class="pdf-viewer">
+                <iframe src="assets/files/landasan-k3.pdf" title="Landasan Hukum K3" frameborder="0"
+                    loading="lazy"></iframe>
             </div>
-            <div class="produk-card">
-                <img src="assets/images/makaroni.jpg" alt="Makaroni Pedas" width="250" height="180" loading="lazy">
-                <h4>Makaroni Pedas</h4>
-            </div>
-        </div>
-    </section>
-    
+            <p style="margin-top:12px;"><a href="assets/files/landasan-k3.pdf" download class="btn-secondary">Unduh
+                    Landasan Hukum (PDF)</a></p>
 
-    <!-- Lingkungan Kerja -->
-    <!-- Landasan Hukum -->
-    <section id="landasan" class="highlight-section">
-        <h2>Landasan Hukum K3</h2>
-        <p>
-            Penerapan Keselamatan dan Kesehatan Kerja (K3) di Bana Food Corps berlandaskan pada beberapa peraturan resmi
-            pemerintah yang menjadi dasar hukum pelaksanaan kegiatan industri makanan. Dokumen berikut memuat penjelasan
-            rinci mengenai undang-undang dan peraturan yang berlaku:
-        </p>
-
-        <ul>
-            <li>✅ <strong>UU No. 1 Tahun 1970</strong> tentang Keselamatan Kerja</li>
-            <li>✅ <strong>PP No. 50 Tahun 2012</strong> tentang Sistem Manajemen K3 (SMK3)</li>
-            <li>✅ <strong>Permenaker No. 5 Tahun 2018</strong> tentang K3 Lingkungan Kerja</li>
-            <li>✅ <strong>UU No. 13 Tahun 2003</strong> tentang Ketenagakerjaan</li>
-        </ul>
-
-        <div class="pdf-viewer">
-            <iframe src="assets/files/landasan-k3.pdf" title="Landasan Hukum K3" frameborder="0" loading="lazy"></iframe>
-        </div>
-        <p style="margin-top:12px;"><a href="assets/files/landasan-k3.pdf" download class="btn-secondary">Unduh Landasan Hukum (PDF)</a></p>
-
-        <a href="landasan.html" class="btn-secondary">Lihat Selengkapnya</a>
-    </section>
+            <a href="landasan.html" class="btn-secondary">Lihat Selengkapnya</a>
+        </section>
 
 
-    <!-- Keselamatan Kerja -->
-    <section id="keselamatan" class="content-section">
-        <h2>Keselamatan Kerja</h2>
-        <p>
-            Setiap pekerja di Bana Food Corps dibekali pelatihan dan pemahaman mengenai prosedur K3 agar mampu bekerja
-            dengan aman serta menghindari risiko kecelakaan kerja.
-        </p>
-        <a href="keselamatan.html" class="btn-secondary">Lihat Prosedur K3</a>
-    </section>
+        <!-- Keselamatan Kerja -->
+        <section id="keselamatan" class="content-section">
+            <h2>Keselamatan Kerja</h2>
+            <p>
+                Setiap pekerja di Bana Food Corps dibekali pelatihan dan pemahaman mengenai prosedur K3 agar mampu
+                bekerja
+                dengan aman serta menghindari risiko kecelakaan kerja.
+            </p>
+            <a href="keselamatan.html" class="btn-secondary">Lihat Prosedur K3</a>
+        </section>
 
-    <!-- APD -->
-    <section id="apd" class="content-section">
-        <h2>Alat Pelindung Diri (APD)</h2>
-        <p>
-            Kami menyediakan APD seperti masker, sarung tangan, sepatu safety, dan pelindung kepala untuk menunjang
-            keamanan
-            setiap karyawan selama proses produksi.
-        </p>
-        <a href="apd.html" class="btn-secondary">Lihat Daftar APD</a>
-    </section>
+        <!-- APD -->
+        <section id="apd" class="content-section">
+            <h2>Alat Pelindung Diri (APD)</h2>
+            <p>
+                Kami menyediakan APD seperti masker, sarung tangan, sepatu safety, dan pelindung kepala untuk menunjang
+                keamanan
+                setiap karyawan selama proses produksi.
+            </p>
+            <a href="apd.html" class="btn-secondary">Lihat Daftar APD</a>
+        </section>
 
-    <!-- P3K -->
-    <section id="p3k" class="content-section">
-        <h2>Penanganan P3K</h2>
-        <p>
-            Tim kami dilatih untuk melakukan pertolongan pertama pada kecelakaan kerja (P3K) secara cepat dan tepat.
-            Kami menyediakan kotak P3K di setiap area kerja sebagai langkah antisipatif.
-        </p>
-        <a href="p3k.html" class="btn-secondary">Pelajari Penanganan P3K</a>
-    </section>
+        <!-- P3K -->
+        <section id="p3k" class="content-section">
+            <h2>Penanganan P3K</h2>
+            <p>
+                Tim kami dilatih untuk melakukan pertolongan pertama pada kecelakaan kerja (P3K) secara cepat dan tepat.
+                Kami menyediakan kotak P3K di setiap area kerja sebagai langkah antisipatif.
+            </p>
+            <a href="p3k.html" class="btn-secondary">Pelajari Penanganan P3K</a>
+        </section>
 
     </main>
 
