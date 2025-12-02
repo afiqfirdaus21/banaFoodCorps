@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beranda - Bana Food Corps</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Bana Food Corps — Produsen makanan ringan halal berbasis di Lawang, Malang. Kebijakan K3, APD, dan P3K.">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Bana Food Corps">
+    <meta property="og:description" content="Produsen makanan ringan halal — keripik molreng, basreng, makaroni, dan seblak.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/banner-bg.jpg">
 </head>
 
 <body>
@@ -13,13 +20,13 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="assets/images/banana.jpg" alt="Logo" />
+                <img src="assets/images/banana.jpg" alt="Logo Bana Food Corps" width="45" height="45" loading="lazy" />
                 <h1>Bana Food Corps</h1>
             </div>
 
             <nav id="navbar">
                 <ul>
-                    <li><a href="index.html" class="active">Beranda</a></li>
+                    <li><a href="index.html" class="active" aria-current="page">Beranda</a></li>
                     <li><a href="landasan.html">Landasan Hukum</a></li>
                     <li><a href="lingkungan.html">Lingkungan Kerja</a></li>
                     <li><a href="keselamatan.html">Keselamatan Kerja</a></li>
@@ -28,7 +35,7 @@
                 </ul>
             </nav>
 
-            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <button id="menu-toggle" class="menu-toggle" aria-controls="navbar" aria-expanded="false" aria-label="Buka menu navigasi">☰</button>
         </div>
     </header>
 
@@ -42,6 +49,7 @@
     </section>
 
     <!-- Tentang Kami -->
+    <main>
     <section id="tentang" class="about">
         <h2>Tentang Kami</h2>
         <p>
@@ -53,33 +61,20 @@
         </p>
         <div class="produk-gallery">
             <div class="produk-card">
-                <img src="assets/images/molreng.jpg" alt="Keripik Molreng">
+                <img src="assets/images/molreng.jpg" alt="Keripik Molreng" width="250" height="180" loading="lazy">
                 <h4>Keripik Molreng</h4>
             </div>
             <div class="produk-card">
-                <img src="assets/images/basreng.jpg" alt="Basreng Pedas">
+                <img src="assets/images/basreng.jpg" alt="Basreng Pedas" width="250" height="180" loading="lazy">
                 <h4>Basreng Pedas</h4>
             </div>
             <div class="produk-card">
-                <img src="assets/images/makaroni.jpg" alt="Makaroni Pedas">
+                <img src="assets/images/makaroni.jpg" alt="Makaroni Pedas" width="250" height="180" loading="lazy">
                 <h4>Makaroni Pedas</h4>
             </div>
         </div>
     </section>
-
-    <!-- Landasan Hukum -->
-    <section id="landasan" class="highlight-section">
-        <h2>Landasan Hukum K3</h2>
-        <p>Berlandaskan pada peraturan perundangan yang mendukung keselamatan kerja di sektor industri makanan:</p>
-        <ul>
-            <li>✅ <strong>UU No. 1 Tahun 1970</strong> tentang Keselamatan Kerja.</li>
-            <li>✅ <strong>PP No. 50 Tahun 2012</strong> tentang Sistem Manajemen K3 (SMK3).</li>
-            <li>✅ <strong>Permenaker No. 5 Tahun 2018</strong> tentang K3 Lingkungan Kerja.</li>
-            <li>✅ <strong>UU No. 13 Tahun 2003</strong> tentang Ketenagakerjaan — menjamin hak dan keselamatan pekerja.
-            </li>
-        </ul>
-        <a href="landasan.html" class="btn-secondary">Lihat Selengkapnya</a>
-    </section>
+    
 
     <!-- Lingkungan Kerja -->
     <!-- Landasan Hukum -->
@@ -99,8 +94,9 @@
         </ul>
 
         <div class="pdf-viewer">
-            <iframe src="D:\Muhammad Afiq Firdaus\banaFoodCorps\assets\files\Landasan Hukum Keselamatan dan Kesehatan Kerja.pdf" title="Landasan Hukum K3" frameborder="0"></iframe>
+            <iframe src="assets/files/landasan-k3.pdf" title="Landasan Hukum K3" frameborder="0" loading="lazy"></iframe>
         </div>
+        <p style="margin-top:12px;"><a href="assets/files/landasan-k3.pdf" download class="btn-secondary">Unduh Landasan Hukum (PDF)</a></p>
 
         <a href="landasan.html" class="btn-secondary">Lihat Selengkapnya</a>
     </section>
@@ -137,6 +133,8 @@
         <a href="p3k.html" class="btn-secondary">Pelajari Penanganan P3K</a>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer>
         <div class="footer-container">
@@ -158,8 +156,7 @@
             <div class="footer-right">
                 <iframe
                     src="https://www.google.com/maps?q=Jl.+Dorowati+Selatan+No.+33+Dusun+Paras,+Desa+Mulyoarjo,+Kecamatan+Lawang,+Kabupaten+Malang&output=embed"
-                    allowfullscreen="" loading="lazy">
-                </iframe>
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
 
@@ -169,11 +166,15 @@
     </footer>
 
     <script>
-        const menuToggle = document.getElementById("menu-toggle");
-        const navbar = document.getElementById("navbar");
-        menuToggle.addEventListener("click", () => {
-            navbar.classList.toggle("show");
-        });
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar');
+        if (menuToggle && navbar) {
+            menuToggle.addEventListener('click', () => {
+                const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+                menuToggle.setAttribute('aria-expanded', String(!expanded));
+                navbar.classList.toggle('show');
+            });
+        }
     </script>
 </body>
 
