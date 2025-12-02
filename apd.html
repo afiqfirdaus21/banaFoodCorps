@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 
+<script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navbar = document.getElementById("navbar");
+
+    menuToggle.addEventListener("click", () => {
+        navbar.classList.toggle("show");
+    });
+</script>
+
 <body>
     <header>
         <div class="header-container">
