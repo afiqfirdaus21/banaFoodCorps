@@ -79,6 +79,7 @@ header {
 .menu-toggle:focus {
     outline: 3px solid rgba(255,217,102,0.5);
     outline-offset: 2px;
+}
 .logo h1 {
     font-size: 22px;
     font-weight: 600;
@@ -86,6 +87,10 @@ header {
 }
 
 nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
 
 /* Focus styles for accessibility */
 a:focus, button:focus {
@@ -95,6 +100,7 @@ a:focus, button:focus {
     display: flex;
     gap: 25px;
     padding: 30px 10%;
+}
 
 nav ul li a {
     color: #fff;
@@ -109,8 +115,7 @@ nav ul li a.active {
     border-bottom: 2px solid #ffd166;
     padding-bottom: 3px;
 }
-    font-size: 2.2rem;
-    color: #fff;
+
 .menu-toggle {
     display: none;
     font-size: 28px;
