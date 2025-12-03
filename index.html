@@ -184,6 +184,15 @@
                 navbar.classList.toggle('show');
             });
         }
+        // Adjust body padding so content sits directly under fixed header
+        function adjustBodyPadding() {
+            const header = document.querySelector('header');
+            if (!header) return;
+            document.body.style.paddingTop = header.offsetHeight + 'px';
+        }
+
+        window.addEventListener('load', adjustBodyPadding);
+        window.addEventListener('resize', adjustBodyPadding);
     </script>
 </body>
 
