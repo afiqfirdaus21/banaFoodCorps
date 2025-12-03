@@ -149,94 +149,93 @@ section {
 }
 
 /* HERO SECTION STYLE */
+/* HERO WRAPPER */
 .hero {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    background: #0e1c2f;
-    /* navy gelap */
+    background: #081a2d;
+    padding: 60px 7%;
 }
 
-.hero-left {
-    flex: 1;
-    padding: 80px 60px;
-    color: white;
+/* FLEX 30:70 */
+.hero-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
 
-.hero-left h1 {
-    font-size: 48px;
-    font-weight: 700;
+/* TEKS (30%) */
+.hero-text {
+    flex: 0 0 30%;
+    color: #fff;
+}
+
+.hero-text h1 {
+    font-size: 36px;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
-.hero-left h2 {
-    font-size: 38px;
-    font-weight: 600;
+.hero-text .subtitle {
+    color: #1abc9c;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
-.hero-left .desc {
-    border-left: 4px solid #4fc3ff;
-    padding-left: 15px;
-    font-size: 18px;
+.hero-text .desc {
+    font-size: 17px;
     line-height: 1.6;
-    max-width: 480px;
-    margin-bottom: 35px;
+    padding-left: 15px;
+    border-left: 4px solid #1abc9c;
+    margin-bottom: 30px;
 }
 
-.hero-btn {
+/* TOMBOL */
+.btn-hero {
     display: inline-block;
     padding: 12px 28px;
-    background: #4fc3ff;
+    background: linear-gradient(to right, #4ec7ff, #0099ff);
     color: #fff;
-    font-size: 18px;
-    border-radius: 40px;
+    border-radius: 30px;
+    font-size: 17px;
     text-decoration: none;
     transition: 0.3s;
 }
 
-.hero-btn:hover {
-    background: #77d9ff;
+.btn-hero:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #0099ff, #0077cc);
 }
 
-/* RIGHT SIDE IMAGE */
-.hero-right {
-    flex: 1;
-    position: relative;
+/* GAMBAR (70%) */
+.hero-image {
+    flex: 0 0 70%;
 }
 
-.hero-bg {
-    position: absolute;
-    right: 0;
-    top: 0;
+.hero-image img {
     width: 100%;
-    height: 100%;
-    background-image: url("assets/images/produkbanafood.jpg");
-    /* ganti image-mu */
-    background-size: cover;
-    background-position: center;
-    filter: brightness(70%);
+    height: 420px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-    .hero {
+    .hero-container {
         flex-direction: column;
-        height: auto;
+        text-align: center;
     }
 
-    .hero-right {
-        height: 280px;
+    .hero-text,
+    .hero-image {
+        flex: 0 0 100%;
     }
 
-    .hero-bg {
-        height: 100%;
+    .hero-text .desc {
+        border-left: none;
+        padding-left: 0;
     }
 }
+
 
 
 /* Tentang Kami */
